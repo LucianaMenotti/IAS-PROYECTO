@@ -56,22 +56,21 @@ body {
     color: rgb(236, 5, 197);
     }
 
-    /*#menu-principal ul li {
+    #menu-principal ul li {
         display: inline-block;/*Alinea los elementos de la lista en una fila (horizontal).*/
-        margin: 0 100px; /*Centra un elemento (como imágenes o párrafos).
-
+        margin: 0 100px; /*Centra un elemento (como imágenes o párrafos).*/
     }
 
     /* Flexbox para el menú principal
     display: flex activa el modo flexbox
     justify-content: space-around distribuye los enlaces con espacio equitativo entre ellos*/
 
-    #menu-principal ul{
+    nav ul  {
         display:flex; /*Hace que los li se pongan en fila*/
         justify-content: space-around; /*los separa uniformemente*/
         list-style:none; /*saca los puntitos*/
         padding: 0;
-        margin: 20px
+        margin: 20px;
     }
     
     #menu-principal ul li a {
@@ -83,7 +82,7 @@ body {
     #menu-principal ul li a:hover{
         text-decoration: none;
         color: rgb(221, 17, 17);
-        font-weight: bold; /*Aumenta el grosor de los trazos de la letra (negrita).*/
+        font-weight: bold; /*Aumenta el grosor de los trazos de la letra (negrita).
         /*text-decoration: underline; /*Dibuja una línea horizontal debajo del texto.*/
     }
 
@@ -237,3 +236,19 @@ box-sizing: border-box; /* Esto hace que el padding se quede ADENTRO */
 todo en una sola línea infinita. Cuando un elemento ya no entra, "salta" a la fila de abajo.
 width: 100%: Al darle el ancho total a los labels y textareas, obligás a que los otros
 elementos se acomoden respetando ese espacio.*/
+
+/* Flexbox para el pie de página (footer)
+-display: flex activa el modo flexbox
+-flex-direction: column apila los elementos verticalmente (uno sobre otro)
+-align-items: center centra todo el contenido horizontalmente dentro del footer*/
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2px;
+background-color: rgb(158, 9, 133);
+color: rgb(0, 0, 0);
+}
+
+
+
