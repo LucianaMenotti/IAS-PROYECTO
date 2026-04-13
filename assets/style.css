@@ -58,12 +58,13 @@ body {
 
     /*#menu-principal ul li {
         display: inline-block;/*Alinea los elementos de la lista en una fila (horizontal).*/
-        margin: 0 100px;/*Centra un elemento (como imágenes o párrafos).*/
-    }
+        margin: 0 100px;/*Centra un elemento (como imágenes o párrafos).
+        } */
 
     /* Flexbox para el menú principal
     display: flex activa el modo flexbox
     justify-content: space-around distribuye los enlaces con espacio equitativo entre ellos*/
+
     #menu-principal ul{
         display: flex; /*Hace que los li se pongan en fila*/
         justify-content: space-around; /*los separa uniformemente*/
@@ -173,4 +174,12 @@ body {
     .mapa-img{
         display: block;
         margin: 0 auto;
+    }
+
+    /*configuramos el contenedor principal*/
+    
+    .container{
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        min-height: 100vh;
     }
