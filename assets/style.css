@@ -58,15 +58,16 @@ body {
 
     /*#menu-principal ul li {
         display: inline-block;/*Alinea los elementos de la lista en una fila (horizontal).*/
-        margin: 0 100px;/*Centra un elemento (como imágenes o párrafos).
-        } */
+        margin: 0 100px; /*Centra un elemento (como imágenes o párrafos).
+
+    }
 
     /* Flexbox para el menú principal
     display: flex activa el modo flexbox
     justify-content: space-around distribuye los enlaces con espacio equitativo entre ellos*/
 
     #menu-principal ul{
-        display: flex; /*Hace que los li se pongan en fila*/
+        display:flex; /*Hace que los li se pongan en fila*/
         justify-content: space-around; /*los separa uniformemente*/
         list-style:none; /*saca los puntitos*/
         padding: 0;
@@ -183,3 +184,31 @@ body {
         grid-template-rows: auto auto 1fr auto;
         min-height: 100vh;
     }
+
+
+    /* Grid para la lista de funciones y datos
+-display: grid activa el modo grid
+-grid-template-columns: 1fr 1fr crea dos columnas de igual tamaño usando unidades fraccionarias
+-gap: 20px define el espacio de separación entre los elemantos*/
+
+main ul {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ; /* Crea 3 columnas exactamente iguales */
+gap: 20px;
+list-style: none; /* Opcional: para que quede más limpio sin puntos */
+padding: 0;
+}
+
+/* INVESTIGACIÓN SOBRE 1fr (Unidad Fraccionaria):
+- 1fr representa una "fracción" del espacio disponible en el contenedor grid.
+- Al usar '1fr 1fr', el navegador divide el ancho total en dos partes iguales.
+- Ventaja sobre el %: El 1fr calcula automáticamente el espacio del 'gap' (20px),
+evitando que el diseño se desborde o aparezca el scroll horizontal.*/
+/*Un toque extra para que los ítems se vean como tarjetitas */
+
+main ul li {
+background-color: rgb(202, 193, 193);
+padding: 15px;
+border: 1px solid rgb(175, 174, 174);
+border-radius: 5px;
+}
