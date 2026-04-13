@@ -212,3 +212,28 @@ padding: 15px;
 border: 1px solid rgb(175, 174, 174);
 border-radius: 5px;
 }
+
+#formulario-contacto{
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+#formulario-contacto label{
+width: 100%;
+font-weight: bold;
+}
+#formulario-contacto input, #formulario-contacto select{
+width: 100%;
+padding: 8px;
+box-sizing: border-box; /* Para que el padding no agrande el ancho */
+}
+#formulario-contacto textarea, #formulario-contacto button{
+width: 100%;
+padding: 10px;
+box-sizing: border-box; /* Esto hace que el padding se quede ADENTRO */
+
+}
+/*flex-wrap: wrap: Es lo que permite que el formulario no intente meter
+todo en una sola línea infinita. Cuando un elemento ya no entra, "salta" a la fila de abajo.
+width: 100%: Al darle el ancho total a los labels y textareas, obligás a que los otros
+elementos se acomoden respetando ese espacio.*/
