@@ -1,0 +1,163 @@
+/* Archivo: style.css
+Descripción: Estilos generales para el sitio informativo del IAS (Parte 1)
+Autor: Luciana Menotti
+Fecha: Abril 2026
+
+Paleta de colores utilizada:
+- Blanco: Color de fondo para resaltar el contenido.
+- Púrpura/Magenta (rgb 158, 9, 133): Color institucional usado en encabezados y detalles.
+- Negro: para los parrafos.
+*/
+
+/*Diseño de la pagina central*/
+body {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family:roboto, sans-serif;
+    }
+    
+    header{
+    background-color: rgb(158, 9, 133);
+    text-align: center;
+    }
+ 
+    .texto-destacado{ /*cualquier elemento del html que tenga el atributo class=texto-destacado*/
+        color:rgb(196, 5, 5);
+        font-size: 20px;/*le da el tamaño mayor al estandar para que resalte*/
+        font-weight: normal;/*grosor de la letra*/
+    }
+
+    main img{/*estilo para las imagenes*/
+        /* el width y el height hace que la imagen sea responsiva. No importa cuanto cambie el ancho, la altura 
+        se ajustara sola para no defromarse*/
+    
+        width: 25%;
+        margin: 0 auto;
+        height: auto;
+        }
+     
+    h1, h2{
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif
+    
+    }
+    
+    p{
+        /*controla el espacio vertical entre las lineas de texto dentro del parrafo*/
+    line-height: normal;
+    /*controla la alineacion horizontal del contenido dentro de un elemento de bloque, como
+    un div, p o header*/
+    text-align:left;
+    }
+    
+    nav a{
+    
+    color: rgb(236, 5, 197);
+    }
+
+    #menu-principal ul li {
+        display: inline-block;/*Alinea los elementos de la lista en una fila (horizontal).*/
+        margin: 0 100px;/*Centra un elemento (como imágenes o párrafos).*/
+    }
+
+    #menu-principal ul li a {
+        color: rgb(158, 9, 133);
+        text-decoration: none; /*Quita el subrayado azul que traen los enlaces por defecto*/
+        transition: 0.3s;/* cambia el color al pasar el mouse*/
+    }
+    #menu-principal ul li a:hover{
+        color: rgb(221, 17, 17);
+        font-weight: bold; /*Aumenta el grosor de los trazos de la letra (negrita).*/
+        text-decoration: underline; /*Dibuja una línea horizontal debajo del texto.*/
+    }
+  
+
+    /*SOBRE-IAS*/
+    .titulos{
+        color: rgb(158, 9, 133);
+        text-align: center;
+    }
+
+    .parrafo{
+        width: 70%;/*ocupa el 70% de la pantalla*/
+        margin: 20px auto;
+        line-height: 1.6;/*separa un poco las lineas entre si para que no esten pegadas*/
+        text-align: justify;/*alinea el texto de forma que quede recto en ambos lados*/
+    }
+
+    /*tablas*/
+    /*dividimos la tabla por su clase*/
+    .tabla-datos{
+        width: 100%; /*ocupa tod el ancho de la pagina*/
+        border-collapse: collapse; /*para que las lineas de la tabla no sean dobles*/
+        margin: 20px 0;/*espacio arriba y abajo de la tabla*/
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+    /*titulos de la tabla THEAD*/
+    .tabla-datos thead{
+        background-color:rgb(158, 9, 133);
+    }
+
+    .tabla-datos th{
+        padding: 15px; /*espacio de titulos*/
+        text-align: left;
+        border: 1px solid rgb(0, 0, 0); /*linea para separar*/
+    }
+
+    /*parte tbody*/
+    .tabla-datos td{
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    /*FUNCIONES*/
+    .funciones{
+        color: rgb(158, 9, 133);
+        text-align: center;
+        font-size: 35px; /*Define la altura de los caracteres en píxeles.*/
+        font-weight: bold;/*Hace que el trazo de la letra sea más ancho (negrita).*/
+
+    }
+
+    .resaltar{
+        background-color: rgb(158, 9, 133);
+        color: white;
+        display: inline-block;/*Permite que los elementos se pongan uno al lado del otro, pero respetando sus márgenes y rellenos.*/
+        padding: 3px 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+    }
+
+    .texto{
+        width: 70%;/*ocupa el 70% de la pantalla*/
+        margin: 20px auto;
+        line-height: 1.6;/*separa un poco las lineas entre si para que no esten pegadas*/
+        text-align: justify;
+    }
+
+    #importante{
+        color: rgb(158, 9, 133);
+        font-weight:bold;
+    }
+    .contactos{
+        color: rgb(158, 9, 133);
+    }
+
+    h3{
+        color: rgb(158, 9, 133);
+    }
+
+    .seccion-mapa {
+        text-align: center;
+    }
+    .seccion-mapa p{
+        text-align: center;
+    }
+
+    .mapa-img{
+        display: block;
+        margin: 0 auto;
+    }

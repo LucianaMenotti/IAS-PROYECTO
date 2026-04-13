@@ -1,0 +1,175 @@
+<!--Página: Contactos
+Descripción: Información de contacto, ubicación y formulario de consultas.
+Autor: Luciana Menotti
+Fecha: Abril 2026
+
+El formulario permite recolectar datos de los usuarios y clasificar sus consultas mediante diferentes tipos de campos de entrada.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Asistencia Social-IAS</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+   <!--ENCABEZADO CON TITULOS-->
+    <header>
+        <h1>Instituto de Asistencia Social-IAS </h1>
+        <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+    </header>
+    <hr>
+
+<!--LA NAVEGACION-->
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-ias.html">Sobre-IAS</a></li>
+            <li><a href="funciones.html">Funciones</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <h2 class="funciones">CONTACTOS</h2> 
+        <section>
+            <ul>
+                
+                <li>
+                    <strong class="contactos">Direccion</strong>
+                    <address>Belgrano 798 - Formosa Capital CP P3600COR</address>
+                </li>
+
+                <li>
+                    <strong class="contactos">Telefono</strong>
+                    <span>(+54) (370) 4429568</span>
+                </li>
+                <li> 
+                    <strong class="contactos">Correo Electronico</strong>
+                    <a href="mailto:consultas@ias.gob.ar">Consultas-info@ias.gob.ar</a>
+                </li>
+
+            </ul>
+        
+        </section>
+        <hr>
+
+        <!--FORMULARIO-->
+        <section>
+            <a href="index.html">Atras</a><!--crea un hipervinculo a otra pagina o seccion,
+            sirve para navegar entre archivos html o enlaces-->
+
+            <!--contenedor, que sirve para grupar todos los datos que el usuario escribe para poder
+            enviarlos en una base de datos o un servidor-->
+            <!--action="#" dice a donde enviar el dato, el # significa que se queda en la misma pagina.
+            method="post" es la forma segura de enviar informacion-->
+            <form action="#"method="post"id="formulario-contacto" style= " width: 400px; margin: 0 auto;">
+
+                <fieldset><!--el marco, sirve para agrupar logicamente campos relacionados dentro de un formulario
+                    Por defecto, el navegador dibuja un borde fino alrededor de los elementos que estan dentro,
+                    lo que ayuda a que el usuario no se pierda si el formulario es largo-->
+
+                    <label for="nombre">NOMBRE</label><!--es el nombre o titulo de cada campo de entrada.
+                    Le dice a las personas con discapacidad visual que deben escribir en el cuadro.-->
+                    <!--debido al atributo for, si el usuario hace clic en la palabra "NOMBRE",el cursor saltara automaticamente
+                    adentro del cuadrito del input. Esto hace que sea mucho mas facil de usar en celualres-->
+                    <input type="text" id="nombre"  placeholder="nombre completo"required/>
+                    <br>
+                    <br>
+    
+                    <label for="email">EMAIL</label>
+                    <input type="email"id="email"placeholder="xxxxx@gmail.com"required>
+                    <br>
+                    <br>
+    
+                    <label for="tel">TELEFONO</label>
+                    <input type="tel"id="tel"placeholder="3704-"required>
+                    <br>
+                    <br>
+    
+                    <label for="motivo">MOTIVO DE CONSULTA</label>
+                   <!--es el contenedor principal. Actua como la "caja" que guarda opciones--> 
+                    <select id="motivo" required>
+                        <option disabled selected>Seleccione una opción</option><!--son cada uno de los 
+                        elementos de la lista-->
+                        <!--disabled selected: hace que seleccione una opcion-->
+                        
+                        <option value="social">ACCIÓN SOCIAL</option>
+                        <!--value: es el dato que realmente envia al servidor ("social"), mientras que lo que esta fuera de las
+                        etiquetas ("ACCION SOCIAL")es lo que ve el usuario-->
+        
+                        <option value="juego">JUEGO RESPONSABLE</option>
+        
+                        <option value="legales">CONSULTAS LEGALES</option>
+                        <br>
+                        <br>
+    
+                    </select>
+    
+                   <br><br> <label for="mensaje">Ingrese su mensaje</label><br><br>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"placeholder="Escribe aqui tu consulta"required></textarea>
+                        <!--cols y rows definen el tamaño inicial del cuadro (colimnas y filas)-->
+                        <!--name mensaje: este atributo permite que el sistema sepa que ese bloque de texto 
+                        corresponde al "mensaje"-->
+                        <br>
+                        <br>
+    
+                        <button type="submit">Enviar consulta</button>
+                        <!--es el motor del formulario. Al tener el type="submit", su funcion unica es recolectar todo
+                        lo que esta dentro del from y disparar el envio hacia la direccion que se puso en el 
+                        action-->
+
+    
+                    </select>
+    
+                </fieldset>
+
+            </form>
+        </section> 
+
+<!--INFORMACION ADICIONAL-->
+
+        <section style="width: 400px;margin:20px auto;">
+           <!--para ahorrar espacio en la pantalla-->
+            <details><!--es el contenedor que oculta o muestra el contenido-->
+                <summary><strong>Horarios de atención extendidos</strong></summary><!--
+                es el titulo que queda visible-->
+                <ul>
+                    <li><strong>Lunes a Viernes:</strong> 07:30 a 13:00 hs.</li>
+                    <li><strong>Turno tarde:</strong> 17:00 a 20:30 hs.</li>
+                    <li><strong>Sábados:</strong> Guardia administrativa (08:30 a 12:00 hs).</li>
+                </ul>
+                <p><em> * Sujeto a feriados provinciales y nacionales.</em></p>
+            </details>
+        </section>
+        <hr>
+
+        <hr> <section class="seccion-mapa">
+            <h3>Nuestra Ubicación</h3>
+            <p>Av. 25 de Mayo 98, Formosa Capital</p>
+        
+            <p>
+                <!--enlace a Google-->
+                <div class="enlace-google"> <a href="https://share.google/OP4Fq1zTVOVOiIR1z" target="_blank">
+                    📍 Ver ubicación en Google Maps.</a>
+                </div>
+            </p>
+        </section>
+
+    </main>
+    <hr>
+
+    <!--PIE DE PAGINA Y COPYRIGHT-->
+    <footer>
+
+        <p>&copy; 2026- Instituto de Asistencia Social de Formosa. Todos los derechos reservados. </p>
+    </footer>
+
+
+    
+</body>
+</html>

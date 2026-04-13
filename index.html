@@ -1,0 +1,69 @@
+<!--Página: Inicio
+Descripción: Página principal del sitio web del Instituto de Asistencia Social (IAS).
+Autor: Luciana Menotti
+Fecha: Abril 2026
+
+La estructura del header agrupa semánticamente los títulos principales y el logo, definiendo la identidad institucional del sitio.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Asistencia Social-IAS</title> <!--nombre de la pagina-->
+    <link rel="stylesheet" href="assets/style.css">
+    <!--rel: defone la relacion entre html y el archivo enlazado (siempre que se use link)
+    href: indica la ruta o destino del enlace o archivo-->
+</head>
+<body>
+   <!--ENCABEZADO CON TITULOS-->
+    <header>
+        <h1>Instituto de Asistencia Social-IAS </h1>
+        <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+
+         <!--LOGO CON PIE DE FOTO-->
+        <figure>
+            <!--src:indica la ruta de la fuente (imagen, video.script)-->
+            <img src="assets/logo-ias.jpg" alt="logo-ias">
+           <figcaption>Logo oficial del Instituto de Asistencia Social </figcaption> <!--proporciona una leyenda o titulo a un <figure>-->
+           
+        </figure>
+    </header>
+    <hr> <!--corte tematico (horizontal)-->
+
+<!--LA NAVEGACION-->
+<!--id: identificador unico para un elemento especifico-->
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-ias.html">Sobre-IAS</a></li>
+            <li><a href="funciones.html">Funciones</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <main> <!--define el contenido unico y principal del documento-->
+
+        <p class="texto-destacado">
+            <!--class: clasifica elementos para aplicar estilos grupales-->
+            <strong>Organismo de control de juegos de azar con <em>responsabilidad social</em></strong>
+        </p>
+        <P>El Instituto de Asistencia Social (IAS) es un organismo estatal encargado de administrar y supervisar las actividades de juegos de azar en la provincia de Formosa, Argentina. Su principal objetivo es regular y controlar las loterías, casinos, y otras formas de entretenimiento con fines de lucro, garantizando que las operaciones se realicen de manera transparente y en beneficio de la comunidad. Además, el IAS destina una parte significativa de los ingresos generados a programas de asistencia social y obras públicas, contribuyendo al desarrollo socioeconómico de la provincia.</P>
+        <img src="assets/edificio-ias.jpg" alt="edificio ias">
+
+       
+    </main>
+    <hr>
+
+    <!--PIE DE PAGINA Y COPYRIGHT-->
+    <footer>
+
+        <p>&copy; 2026- Instituto de Asistencia Social de Formosa. Todos los derechos reservados. </p>
+    </footer>
+
+
+    
+</body>
+</html>
