@@ -56,22 +56,35 @@ body {
     color: rgb(236, 5, 197);
     }
 
-    #menu-principal ul li {
+    /*#menu-principal ul li {
         display: inline-block;/*Alinea los elementos de la lista en una fila (horizontal).*/
         margin: 0 100px;/*Centra un elemento (como imágenes o párrafos).*/
     }
 
+    /* Flexbox para el menú principal
+    display: flex activa el modo flexbox
+    justify-content: space-around distribuye los enlaces con espacio equitativo entre ellos*/
+    #menu-principal ul{
+        display: flex; /*Hace que los li se pongan en fila*/
+        justify-content: space-around; /*los separa uniformemente*/
+        list-style:none; /*saca los puntitos*/
+        padding: 0;
+        margin: 20px
+    }
+    
     #menu-principal ul li a {
         color: rgb(158, 9, 133);
         text-decoration: none; /*Quita el subrayado azul que traen los enlaces por defecto*/
         transition: 0.3s;/* cambia el color al pasar el mouse*/
     }
+    
     #menu-principal ul li a:hover{
+        text-decoration: none;
         color: rgb(221, 17, 17);
         font-weight: bold; /*Aumenta el grosor de los trazos de la letra (negrita).*/
-        text-decoration: underline; /*Dibuja una línea horizontal debajo del texto.*/
+        /*text-decoration: underline; /*Dibuja una línea horizontal debajo del texto.*/
     }
-  
+
 
     /*SOBRE-IAS*/
     .titulos{
